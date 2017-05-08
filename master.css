@@ -1,0 +1,518 @@
+section, article, aside, figure, header, footer, nav {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  background: #ffffff;
+}
+
+body, figure, nav .mainNavigation {
+  margin: 0;
+}
+
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f1ecdf;
+  z-index: 1000;
+}
+
+nav .wrap {
+  width: 70%;
+  margin: 10px auto;
+  position: relative;
+}
+
+nav .wrap .logo {
+  float: left;
+}
+
+nav .wrap .logo img {
+  width: 150px;
+}
+
+nav .wrap .mainNavigation {
+  font-size: 0.8em;
+  float: right;
+  list-style-type: none;
+  padding: 0;
+  color: #222222;
+  margin-top: 20px;
+}
+
+nav .wrap .mainNavigation li {
+  float: left;
+  margin-right: 30px;
+}
+
+nav .wrap .mainNavigation li:last-child {
+  margin-right: 0;
+}
+
+nav .wrap .mainNavigation li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav .mobilebars {
+  display: none;
+  margin: 10px 0 0 0;
+  float: right;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+nav .mainNavigation .mobileSocial {
+  display: none;
+  font-size: 0.6em;
+  position: relative;
+}
+
+nav .mainNavigation .mobileSocial p {
+  margin-left: 10px;
+  float: left;
+}
+
+nav .mainNavigation .mobileSocial a {
+  float: right;
+}
+
+nav .mainNavigation .mobileSocial img {
+  height: 25px;
+  margin-right: 25px;
+  position: relative;
+  top: 15px;
+}
+
+header {
+  background: url('img/header.png') no-repeat;
+  background-size: 100%;
+  padding-bottom: 160px;
+}
+
+header .content {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+header .content h1 {
+  font-size: 5.4em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+header .content .separator, #poslovi .intro .separator, #companyInfo .container .separator {
+  border-top: 3px solid #c41230;
+  width: 10%;
+  margin: 0 auto;
+}
+
+header .content p {
+  font-family: Helvetica;
+  font-size: 1.6em;
+  margin-top: 50px;
+}
+
+#mainContent {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#services {
+  width: 100%;
+}
+
+#services .service {
+  float: left;
+  width: 25.3333%;
+  padding: 80px 4% 40px 4%;
+  text-align: center;
+  background: #fbfbfb;
+  transition: background .15s linear;
+}
+
+#services .service:hover {
+  background: #ededed;
+}
+
+#services .service .line {
+  width: 10%;
+  margin: 0 auto;
+  border-top: 2px solid #d0d0d0;
+}
+
+#services .service img {
+  width: 30%;
+}
+
+#services .service h3 {
+  color: #222222;
+}
+
+#services .service p {
+  margin-top: 20px;
+  color: #666666;
+  font-weight: 300;
+}
+
+#poslovi {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#poslovi .intro {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+#poslovi .intro .top, #companyInfo .container .top, #follow .top {
+  color: #999999;
+  margin-top: 80px;
+  text-align: center;
+}
+
+#poslovi .intro h2, #companyInfo .container h2 {
+  text-align: center;
+  color: #222222;
+  font-size: 3.6em;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#poslovi .intro .desc {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #222222;
+  margin: 40px 0 100px 0;
+}
+
+#poslovi .posao {
+  width: 100%;
+  padding: 40px 0;
+}
+
+#poslovi .posao.light {
+  background: #ffffff;
+  color: #222222;
+}
+
+#poslovi .posao.dark {
+  background: #222222;
+  color: #e8e8e8;
+}
+
+#poslovi .posao .wrap {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#poslovi .posao .wrap .info {
+  width: 50%;
+  float: left;
+}
+
+#poslovi .posao .wrap .info .heading {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+#poslovi .posao .wrap .info .req {
+  font-weight: 300;
+}
+
+#poslovi .posao .wrap .info .skill {
+  padding: 10px 15px;
+  width: 100px;
+  border-radius: 2px;
+}
+
+#poslovi .posao.light .wrap .info .skill {
+  background: #ffffff;
+  color: #c41230;
+  border: 1px solid #bbbbbb;
+}
+
+#poslovi .posao.dark .wrap .info .skill {
+  background: #222222;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#poslovi .posao .wrap .prijava {
+  float: right;
+  padding: 10px 40px;
+  border-radius: 2px;
+  margin-top: 45px;
+}
+
+#poslovi .posao.light .wrap .prijava {
+  border: 2px solid #222222;
+  color: #222222;
+  background: #ffffff;
+}
+
+#poslovi .posao.dark .wrap .prijava {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background: #222222;
+}
+
+#poslovi .more {
+  display: block;
+  padding: 10px 20px;
+  margin: 60px auto;
+  background: #d7d7d7;
+  color: #333333;
+  border: none;
+  border-radius: 2px;
+}
+
+#companyInfo {
+  width: 100%;
+  background: #fbfbfb;
+}
+
+#companyInfo .container {
+  width: 65%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+#companyInfo .container p {
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+#follow {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#follow img {
+  width: 60px;
+}
+
+footer {
+  background: #222222;
+  color: #666666;
+  padding-top: 120px;
+}
+
+.footerWrap, .branding .wrap {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footerWrap {
+  padding-bottom: 80px;
+}
+
+.footerWrap .footerColumn {
+  width: 33.3333%;
+  float: left;
+  margin-right: 6%;
+}
+
+.footerWrap .footerColumn:last-child {
+  margin-right: 0;
+  width: 21.3333%;
+}
+
+.footerColumn h4 {
+  color: #f2f2f2;
+  float: left;
+  margin-top: 5px;
+}
+
+.footerColumn img {
+  width: 15px;
+  float: left;
+  margin-right: 10px;
+}
+
+.footerColumn p {
+  margin-top: 0;
+  line-height: 1.2em;
+}
+
+footer .branding {
+  width: 100%;
+  background: #1e1e1e;
+  padding: 10px 0;
+}
+
+.branding .wrap .copyright {
+  float: left;
+  font-size: 0.8em;
+}
+
+.branding .wrap .contact {
+  float: right;
+  position: relative;
+  top: 5px;
+}
+
+.branding .wrap .contact img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.branding .wrap .contact span {
+  position: relative;
+  top: -5px;
+}
+
+.branding .wrap .contact span a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+
+  nav .wrap .mobilebars, nav .mainNavigation .mobileSocial { display: block; }
+
+  .mainNavigation { display: none; }
+
+  nav .wrap, header .content, #poslovi .intro, #poslovi .posao .wrap,
+  #companyInfo .container, .footerWrap, .branding .wrap { width: 88%; }
+
+  header { background-size: cover; }
+
+  header .content .separator { display: none; }
+
+  nav .wrap .mainNavigation {
+    float: none;
+    color: #c4c4c4;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    margin-top: 0;
+    margin-left: -7.5%;
+    width: 115%;
+    text-align: center;
+    font-size: 2em;
+    padding: 40px 0;
+  }
+
+  nav .wrap .mainNavigation li {
+    display: block;
+    float: none;
+    padding: 20px 0;
+    margin-right: 0;
+  }
+
+  nav .wrap .mainNavigation li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+  nav .wrap .mobilebars, nav .mainNavigation .mobileSocial { display: block; }
+
+  .mainNavigation { display: none; }
+
+  nav .wrap, header .content, #services .service, #poslovi .intro, #poslovi .posao .wrap,
+  #companyInfo .container, .footerWrap .footerColumn, .footerWrap .footerColumn:last-child,
+  .branding .wrap { width: 92%; }
+
+  header { background-size: initial; }
+
+  header .content h1 { font-size: 4em; }
+
+  header .content .separator { display: none; }
+
+  #services .service { float: none; }
+
+  #poslovi .info h2, #companyInfo .container h2 { font-size: 3em; }
+
+  #poslovi .posao .wrap .info { width: 100%; }
+
+  #poslovi .posao .wrap .info .skill {
+    padding: 10px;
+    width: auto;
+  }
+
+  #poslovi .posao.light .wrap .info .skill, #poslovi .posao.dark .wrap .info .skill {
+    background: transparent;
+    color: #c41230;
+    border: none;
+  }
+
+  #poslovi .posao.light { background: #f8f7f5; }
+
+  #poslovi .posao.dark {
+    background: #ffffff;
+    color: #222222;
+  }
+  #poslovi .posao .wrap .prijava { display: none; }
+
+  .footerWrap .footerColumn {
+    float: none;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  header .content p { font-size: 1.2em; }
+
+  header .content .separator, #poslovi .intro .separator, #companyInfo .container .separator { width: 20%; }
+
+  .branding .wrap .copyright {
+    float: none;
+    text-align: center;
+  }
+
+  .branding .wrap .contact {
+    float: none;
+    position: absolute;
+    top: -60px;
+    left: 30px;
+  }
+
+  nav .wrap .mainNavigation {
+    float: none;
+    color: #c4c4c4;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    margin-top: 0;
+    margin-left: -5%;
+    width: 110%;
+    text-align: center;
+    font-size: 2em;
+    padding: 40px 0;
+  }
+
+  nav .wrap .mainNavigation li {
+    display: block;
+    float: none;
+    padding: 20px 0;
+    margin-right: 0;
+  }
+
+  nav .wrap .mainNavigation li a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+}
