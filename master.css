@@ -12,6 +12,11 @@ body, figure, nav .mainNavigation {
   margin: 0;
 }
 
+a img {
+  border: none;
+  outline: none;
+}
+
 .clearfix::before, .clearfix::after {
   display: table;
   content: "";
